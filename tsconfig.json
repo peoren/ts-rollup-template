@@ -1,0 +1,16 @@
+{
+  "include": ["src/global.d.ts", "src/**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "rootDir": ".",
+    "outDir": "dist",
+    "strict": true,
+    "declaration": true,
+    "module": "es2015",
+    "target": "es5",
+    "sourceMap": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
