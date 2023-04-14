@@ -7,6 +7,7 @@ import typescript from 'rollup-plugin-typescript2';
 import { babel } from '@rollup/plugin-babel'
 import resolve from '@rollup/plugin-node-resolve'
 import commonjs from "@rollup/plugin-commonjs";
+// import {eslint} from "rollup-plugin-eslint";
 
 export default {
     input: "src/main.ts",
@@ -27,6 +28,13 @@ export default {
         footer,
     }],
     plugins:[
+        // lint file
+        // eslint({
+        //     throwOnError: true, // lint 结果有错误将会抛出异常
+        //     throwOnWarning: true,
+        //     include: ['src/**/*.ts'],
+        //     exclude: ['node_modules/**', 'lib/**', '*.js'],
+        // }),
         // compile typescript to javascript
         typescript(
             {tsconfig: 'tsconfig.json'}

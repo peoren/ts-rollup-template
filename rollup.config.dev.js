@@ -11,6 +11,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import commonjs from "@rollup/plugin-commonjs";
 import livereload from "rollup-plugin-livereload";
 import serve from "rollup-plugin-serve";
+// import {eslint} from "rollup-plugin-eslint";
 
 export default {
     input: "src/main.ts",
